@@ -47,7 +47,7 @@
                             
                             <div class="language">
                                 <br><br><br><br><br><br>
-                                <a href="kiny.hpgt.org">KINY</a>
+                                <a href="#">KINY</a>
                                 <a href="#">ENG</a>
                             </div>
                         </div>
@@ -81,16 +81,16 @@
                                 <a href="{% url 'team' %}" class="dropdown-item">Code of condact</a>
                             </div>
                         </div> 
-                        <a href="#service" class="nav-item nav-link">What we do</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
-                        <a href="#volunteer" class="nav-item nav-link">Get involved</a>
+                        <a href="{% url 'service' %}" class="nav-item nav-link">What we do</a>
+                        
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Press Room</a>
                             <div class="dropdown-menu">
-                                <a href="#blog" class="dropdown-item">Newsletters</a>
-                                <a href="#event" class="dropdown-item">Events / Announcements</a>
+                                <a href="{% url 'blog' %}" class="dropdown-item">Newsletters</a>
+                                <a href="{% url 'event' %}" class="dropdown-item">Events / Announcements</a>
                             </div>
                         </div> 
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
                         <a href="#donate" class="nav-item nav-link">Donate Now</a>
                     </div>
                 </div>
@@ -126,21 +126,19 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link">
                             <h2>Popular Links</h2>
-                            <a href="">About Us</a>
-                            <a href="">Contact Us</a>
-                            <a href="">Popular Causes</a>
-                            <a href="">Upcoming Events</a>
-                            <a href="">Latest Blog</a>
+                            <a href="{% url 'vision-mission-and-values' %}">About Us</a>
+                            <a href="{% url 'contact' %}">Contact Us</a>
+                            <a href="{% url 'service' %}">what we do</a>
+                            <a href="{% url 'event' %}">Upcoming Events</a>
+                            <a href="{% url 'blog' %}">Latest Blog</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link">
                             <h2>Useful Links</h2>
-                            <a href="">Terms of use</a>
-                            <a href="">Privacy policy</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
+                            <a href="{% url 'contact' %}">Terms of use</a>
+                            <a href="{% url 'contact' %}">Privacy policy</a>
+                            <a href="{% url 'contact' %}">Help</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -161,7 +159,7 @@
                         <p>&copy; <a href="">HPGT</a>, All Right Reserved.</p>
                     </div>
                     <div class="col-md-6">
-                        <p>Developed By <a href="https://bravetech.co.rw">Bravetech</a></p>
+                        <p>Developed By <a href="https://bravetech.co.rw">Yannick</a></p>
                     </div>
                 </div>
             </div>

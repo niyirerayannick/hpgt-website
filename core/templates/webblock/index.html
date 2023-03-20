@@ -457,44 +457,25 @@
                 <h2>Be ready for our upcoming charity events</h2>
             </div>
             <div class="row">
+                {% for event in events %}
                 <div class="col-lg-6">
                     <div class="event-item">
-                        <img src="img/event1.jpg" alt="Image">
+                        <img src="{{ event.image.url }}" alt="Image">
                         <div class="event-content">
                             <div class="event-meta">
-                                <p><i class="fa fa-calendar-alt"></i>20-June-2022</p>
-                                <p><i class="far fa-clock"></i>8:00 - 11:00</p>
-                                <p><i class="fa fa-map-marker-alt"></i>BUGESERA hospital </p>
+                                <p><i class="fa fa-calendar-alt"></i>{{event.start_date}}</p>
+                                <p><i class="far fa-clock"></i>{{event.start_time}} - {{event.end_time}}</p>
+                                <p><i class="fa fa-map-marker-alt"></i>{{event.location}}</p>
                             </div>
                             <div class="event-text">
-                                <h3>Fun run/walk</h3>
-                                <p>
-                                    this could be an event that uses a community hiking trail.
-                                </p>
+                                <h3>{{event.title}}</h3>
+                                <p>{{event.description}}</p>
                                 <a class="btn btn-custom" href="">Join Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="event-item">
-                        <img src="img/event2.jpg" alt="Image">
-                        <div class="event-content">
-                            <div class="event-meta">
-                                <p><i class="fa fa-calendar-alt"></i>20-June-2022</p>
-                                <p><i class="far fa-clock"></i>8:00 - 11:00</p>
-                                <p><i class="fa fa-map-marker-alt"></i>NYAMATA </p>
-                            </div>
-                            <div class="event-text">
-                                <h3>PROTECT AND SERVE</h3>
-                                <p>
-                                    join us to  serve you medical support to poor for one evening.
-                                </p>
-                                <a class="btn btn-custom" href="">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -570,7 +551,37 @@
     </div>
 </section>
     <!-- Contact End -->
-
+ <!-- families Start -->
+ <div class="causes">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Our Families </p>
+            <h2>Let's know about families we have</h2>
+        </div>
+        <div class="owl-carousel causes-carousel">
+            {% for famil in famils %}
+            <div class="causes-item">
+                <div class="causes-img">
+                    {% if famil  %}
+                    <img src="{{ famil.image.url }}" alt="Image">
+                    {% endif  %}
+                </div>
+                
+                <div class="causes-text">
+                    <h3>{{famil.name}}</h3>
+                    <p>{{famil.about_fam}}</p>
+                </div>
+                <div class="causes-btn">
+                    <a href="#" class="btn btn-custom">Learn More</a>
+                    <a href="{{ famil.whatsapp_url }}" class="btn btn-custom">Join Now</a>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+</div>
+<!-- families End -->
 
     <!-- Blog Start -->
 <section id="blog">
@@ -603,7 +614,7 @@
             </div>
         </div>
     </div>
-      </section>
+</section>
     <!-- Blog End -->
 
 {% endblock %}

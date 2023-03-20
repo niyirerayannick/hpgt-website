@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Service</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="">Home</a>
+                        <a href="">Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+        
+        <!-- Service Start -->
+        <section id="service">
+            <div class="service">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>What We Do?</p>
+                        <h2>We believe that we can save more lifes with you</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-healthcare"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>HEALING AND COUNSELING</h3>
+                                    <p>We do healing and counseling for individuals, couples and families. We provide a healing place for persons on their journey to wholeness. The broken hearts with wounds from families and the society, find shelter, comfort and healing with us. <br>Isaiah 40:1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-social-care"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>SOCIAL AFFAIRS ACTIVITIES </h3>
+                                    <p>We focus on equipping the needy in a wholistic perspective. As far as the body is concerned, we provide food, hygienic materials, financial support to the needy. This is done by periodic hospital and community visits, and follow up.Hebrews 13:16</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-education"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>TRAINING</h3>
+                                    <p>We equip healthcare providers, and all healthcare related personnel with special skills and knowledge to care for people in a holistic approach, and to give special care to mental and palliative patients. We provide Training of Trainers in areas of Career Guidance in healthcare, Palliative care and Mental Health.<br>Proverbs 9:9
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-education"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>RESEARCH</h3>
+                                    <p>We remain observant on the trends of health-related issues, and the possible solutions. Our research focuses on health problems in the community, identifying their root causes and suggesting possible solutions to the concerned organs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-home"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>FIGHT AGAINST DOMESTIC AND GENDER BASED VIOLENCE</h3>
+                                    <p>We are committed to fight against any form of violence in families and the society. We advocate for the victims, and help them to detach themselves from painful feelings. (amarangamutima atsikamiwe</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="flaticon-social-care"></i>
+                                </div>
+                                <div class="service-text">
+                                    <h3>HEALTHCARE PROVISION </h3>
+                                    <p>We carry out screening campaigns, where we test freely Non-communicable diseases and give advice accordingly. We also help patients in palliative care, and advocate for people who cannot afford standard healthcare services.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service End -->
+        
+    <!-- Blog Start -->
+    <section id="blog">
+        <div class="blog">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Our Blog</p>
+                    <h2>Latest news & articles directly from our blog</h2>
+                </div>
+                <div class="row">
+                    {% for post in posts %} 
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{{ post.image.url }}" alt="Image">
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="{% url 'post_detail' post.id %}">{{ post.title|slice:":30" }}</a></h3>
+                                <p>
+                                    {{post.content|slice:":100" }} 
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-user"></i><a href="{% url 'post_detail' post.id %}">{{ post.author }}</a></p>
+                                <p><i class="fa fa-comments"></i><a href="{% url 'post_detail' post.id %}">5 Comments</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Blog End -->
+        
+{% endblock %}
