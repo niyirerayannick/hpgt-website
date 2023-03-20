@@ -1,0 +1,609 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Carousel Start -->
+<section id="carousel">
+    <div class="carousel">
+        <div class="container-fluid">
+            <div class="owl-carousel">
+                <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="{% static "img/slide-1.jpg"%}" alt="Image">
+                    </div>
+                    <div class="carousel-text">
+                        <h1>Healing And Counseling</h1>
+                        <p>
+                            We do healing and counseling for individuals, couples and families The broken hearts with wounds from families and the society, find shelter, comfort and healing with us.<br>Isaiah 40:1
+                        </p>
+                        <div class="carousel-btn">
+                            <a class="btn btn-custom" href="">Donate Now</a>
+                            <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="{% static "img/slide-2.jpg"%}" alt="Image">
+                    </div>
+                    <div class="carousel-text">
+                        <h1>Training</h1>
+                        <p>
+                             We provide Training of Trainers in areas of Career Guidance in healthcare, Palliative care and Mental Health. <br>Proverbs 9:9
+                        </p>
+                        <div class="carousel-btn">
+                            <a class="btn btn-custom" href="">Donate Now</a>
+                            <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-img">
+                        <img src="{% static "img/slide-4.jpg"%}" alt="Image">
+                    </div>
+                    <div class="carousel-text">
+                        <h1>Social Affairs Activities</h1>
+                        <p>
+                            We focus on equipping the needy in a wholistic perspective. As far as the body is concerned, we provide food, hygienic materials, financial support to the needy<br>Hebrews 13:16
+                        </p>
+                        <div class="carousel-btn">
+                            <a class="btn btn-custom" href="">Donate Now</a>
+                            <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Carousel End -->
+
+    <!-- Video Modal Start-->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=2r-bPYomB7M" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Video Modal End -->
+    
+
+    <!-- About Start -->
+<section id="about">
+    <div class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img" data-parallax="scroll" data-image-src="{% static "img/slide-1.jpg"%}" ></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-header">
+                        <p>Learn About Us</p>
+                        <h2>HEALTHCARE PROFFESIONALS IN GLOBAL TRANSFORMATIONS</h2>
+                    </div>
+                    <div class="about-tab">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#tab-content-2">Mission</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#tab-content-3">Our belives</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="tab-content-1" class="container tab-pane active">
+                                Healthcare professionals in global transformation (HPGT) is the International Ministry headquartered in Rwanda which is comprised by all Christians healthcare whomever staff members and students are studying health related domain. It was started by six Christian students’ midwives who were studied and served God in the University of Rwanda, Huye campus in 2018.
+                            </div>
+                            <div id="tab-content-2" class="container tab-pane fade">
+                                The main purpose of the ministry is to teach people to live in purposeful life, empathy and to express God's purpose for human life by doing what He was created to do and having a happy ending. using the word of God Ephesians 2:10
+                            </div>
+                            <div id="tab-content-3" class="container tab-pane fade">
+                                 Promoting, maintaining and improving the quality of life and well-being of all people. Psalm 103: 3-4; 3. he is the one who forgives all that you have received and heals all your diseases.4. he redeems your soul from the pit, and clothe you with mercy and kindness.
+                            </div>
+                            <div id="tab-content-4" class="container tab-pane fade">
+                                Promoting, maintaining and improving the quality of life and well-being of all people. Psalm 103: 3-4; 3. he is the one who forgives all that you have received and heals all your diseases.4. he redeems your soul from the pit, and clothe you with mercy and kindness.
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- About End -->
+    <!-- Service Start -->
+<section id="service">
+    <div class="service">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>What We Do?</p>
+                <h2>We believe that we can save more lifes with you</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-healthcare"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>HEALING AND COUNSELING</h3>
+                            <p>We do healing and counseling for individuals, couples and families. We provide a healing place for persons on their journey to wholeness. The broken hearts with wounds from families and the society, find shelter, comfort and healing with us. <br>Isaiah 40:1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-social-care"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>SOCIAL AFFAIRS ACTIVITIES </h3>
+                            <p>We focus on equipping the needy in a wholistic perspective. As far as the body is concerned, we provide food, hygienic materials, financial support to the needy. This is done by periodic hospital and community visits, and follow up.Hebrews 13:16</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-education"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>TRAINING</h3>
+                            <p>We equip healthcare providers, and all healthcare related personnel with special skills and knowledge to care for people in a holistic approach, and to give special care to mental and palliative patients. We provide Training of Trainers in areas of Career Guidance in healthcare, Palliative care and Mental Health.<br>Proverbs 9:9
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-education"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>RESEARCH</h3>
+                            <p>We remain observant on the trends of health-related issues, and the possible solutions. Our research focuses on health problems in the community, identifying their root causes and suggesting possible solutions to the concerned organs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-home"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>FIGHT AGAINST DOMESTIC AND GENDER BASED VIOLENCE</h3>
+                            <p>We are committed to fight against any form of violence in families and the society. We advocate for the victims, and help them to detach themselves from painful feelings. (amarangamutima atsikamiwe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="flaticon-social-care"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>HEALTHCARE PROVISION </h3>
+                            <p>We carry out screening campaigns, where we test freely Non-communicable diseases and give advice accordingly. We also help patients in palliative care, and advocate for people who cannot afford standard healthcare services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Service End -->
+  <!--   <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <i class="flaticon-home"></i>
+                        <div class="facts-text">
+                            <h3 class="facts-plus" data-toggle="counter-up">150</h3>
+                            <p>Countries</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <i class="flaticon-charity"></i>
+                        <div class="facts-text">
+                            <h3 class="facts-plus" data-toggle="counter-up">400</h3>
+                            <p>Volunteers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <i class="flaticon-kindness"></i>
+                        <div class="facts-text">
+                            <h3 class="facts-dollar" data-toggle="counter-up">10000</h3>
+                            <p>Our Goal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="facts-item">
+                        <i class="flaticon-donation"></i>
+                        <div class="facts-text">
+                            <h3 class="facts-dollar" data-toggle="counter-up">5000</h3>
+                            <p>Raised</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Facts End -->
+    
+    
+    <!-- Causes Start -->
+    <!-- <div class="causes">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Popular Causes</p>
+                <h2>Let's know about charity causes around the world</h2>
+            </div>
+            <div class="owl-carousel causes-carousel">
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="img/causes-1.jpg" alt="Image">
+                    </div>
+                    <div class="causes-progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="progress-text">
+                            <p><strong>Raised:</strong> $100000</p>
+                            <p><strong>Goal:</strong> $50000</p>
+                        </div>
+                    </div>
+                    <div class="causes-text">
+                        <h3>Lorem ipsum dolor sit</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa</p>
+                    </div>
+                    <div class="causes-btn">
+                        <a class="btn btn-custom">Learn More</a>
+                        <a class="btn btn-custom">Donate Now</a>
+                    </div>
+                </div>
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="img/causes-2.jpg" alt="Image">
+                    </div>
+                    <div class="causes-progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="progress-text">
+                            <p><strong>Raised:</strong> $100000</p>
+                            <p><strong>Goal:</strong> $50000</p>
+                        </div>
+                    </div>
+                    <div class="causes-text">
+                        <h3>Lorem ipsum dolor sit</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa</p>
+                    </div>
+                    <div class="causes-btn">
+                        <a class="btn btn-custom">Learn More</a>
+                        <a class="btn btn-custom">Donate Now</a>
+                    </div>
+                </div>
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="img/causes-3.jpg" alt="Image">
+                    </div>
+                    <div class="causes-progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="progress-text">
+                            <p><strong>Raised:</strong> $100000</p>
+                            <p><strong>Goal:</strong> $50000</p>
+                        </div>
+                    </div>
+                    <div class="causes-text">
+                        <h3>Lorem ipsum dolor sit</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa</p>
+                    </div>
+                    <div class="causes-btn">
+                        <a class="btn btn-custom">Learn More</a>
+                        <a class="btn btn-custom">Donate Now</a>
+                    </div>
+                </div>
+                <div class="causes-item">
+                    <div class="causes-img">
+                        <img src="img/causes-4.jpg" alt="Image">
+                    </div>
+                    <div class="causes-progress">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                        <div class="progress-text">
+                            <p><strong>Raised:</strong> $100000</p>
+                            <p><strong>Goal:</strong> $50000</p>
+                        </div>
+                    </div>
+                    <div class="causes-text">
+                        <h3>Lorem ipsum dolor sit</h3>
+                        <p>Lorem ipsum dolor sit amet elit. Phasell nec pretium mi. Curabit facilis ornare velit non vulputa</p>
+                    </div>
+                    <div class="causes-btn">
+                        <a class="btn btn-custom">Learn More</a>
+                        <a class="btn btn-custom">Donate Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Causes End -->
+    
+    
+    <!-- Donate Start -->
+<section id="donate">
+    <div class="section-header text-center">
+        <p>Donate Now</p>
+        <h2>Let's donate to needy people for better lives</h2>
+    </div>
+    <div class="donate" data-parallax="scroll" data-image-src="{% static "img/donate.jpg" %}">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="donate-content">
+                        <div class="section-header">
+                            <p>Donate Now</p>
+                            <h2>Let's donate to needy people for better lives</h2>
+                        </div>
+                        <div class="donate-text">
+                            <p>
+                                Let's donate to needy people for better lives </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    
+                        <div class="pricing-thumb bg-white shadow-lg">
+                            <div class="pricing-title-wrap d-flex align-items-center">
+
+                                <center><h4 class="pricing-title">Give Us a Hand</h4></center>
+
+                                <h5 class="pricing-small-title text-white mb-0 ms-auto"></h5>
+                            </div>
+
+                            <div class="pricing-body">
+                            <center> <p>
+                                        <img src="{% static "img/momo.jpg" %}" class="img-fluid avatar-image avatar-image-left"> 
+                                        <br><p>0788 500 628 <br>Holder BARUTWANAYO Emmanuel</p>
+                                    </p></center>
+                                  <div class="border-bottom pb-3 mb-4">
+                                    <center><button><a  rel="sponsored" href="#" class="custom-btn btn">Donate Now</a></button> </center>
+
+                                  </div>
+                             </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Donate End --> 
+<section id="team"> 
+        <!-- Team Start -->
+        <div class="team">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Meet Our Team</p>
+                    <h2>Awesome guys behind our charity activities</h2>
+                </div>
+                <div class="row">
+                    {% for team in teams %}
+                    <div class="col-lg-3 col-md-6">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{{ team.image.url }}" alt="Team Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>{{ team.name }}</h2>
+                                <p>{{ team.title }}</p>
+                                <div class="team-social">
+                                    <a href="{{ team.twitter_url }}"><i class="fab fa-twitter"></i></a>
+                                    <a href="{{ team.facebook_url }}"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="{{ team.instagram_url }}"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="{{ team.instagram_url }}"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor%}
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+    </section>
+    <!-- team End -->
+    
+    
+    <!-- Event Start -->
+
+    <section id="event">
+    <div class="event">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Upcoming Events</p>
+                <h2>Be ready for our upcoming charity events</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="event-item">
+                        <img src="img/event1.jpg" alt="Image">
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <p><i class="fa fa-calendar-alt"></i>20-June-2022</p>
+                                <p><i class="far fa-clock"></i>8:00 - 11:00</p>
+                                <p><i class="fa fa-map-marker-alt"></i>BUGESERA hospital </p>
+                            </div>
+                            <div class="event-text">
+                                <h3>Fun run/walk</h3>
+                                <p>
+                                    this could be an event that uses a community hiking trail.
+                                </p>
+                                <a class="btn btn-custom" href="">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="event-item">
+                        <img src="img/event2.jpg" alt="Image">
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <p><i class="fa fa-calendar-alt"></i>20-June-2022</p>
+                                <p><i class="far fa-clock"></i>8:00 - 11:00</p>
+                                <p><i class="fa fa-map-marker-alt"></i>NYAMATA </p>
+                            </div>
+                            <div class="event-text">
+                                <h3>PROTECT AND SERVE</h3>
+                                <p>
+                                    join us to  serve you medical support to poor for one evening.
+                                </p>
+                                <a class="btn btn-custom" href="">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Event End -->
+<!-- Testimonial Start -->
+<section id="testimonial">
+    <div class="testimonial">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Testimonial</p>
+                <h2>What people are talking about our charity activities</h2>
+            </div>
+             
+            <div class="owl-carousel testimonials-carousel">
+                {% for testimonial in testimonials %}
+                <div class="testimonial-item">
+                    <div class="testimonial-profile">
+                        <img src="{{ testimonial.profile.url }}" alt="Image">
+                        <div class="testimonial-name">
+                            <h3>{{ testimonial.name }}</h3>
+                            <p>{{ testimonial.job_title }}</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        <p>{{ testimonial.description }}</p>
+                    </div>
+                </div>
+                {% endfor%}  
+            </div>
+        
+        </div>
+    </div>
+</section>
+    <!-- Testimonial End -->
+
+    <!-- Contact Start -->
+<section id="contact">
+    <div class="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Get In Touch</p>
+                <h2>Contact for any query</h2>
+            </div>
+            <div class="contact-img">
+                <img src="{% static "img/contact.jpg"%}"  alt="Image">
+            </div>
+            <div class="contact-form">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div>
+                            <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact End -->
+
+
+    <!-- Blog Start -->
+<section id="blog">
+    <div class="blog">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Our Blog</p>
+                <h2>Latest news & articles directly from our blog</h2>
+            </div>
+            <div class="row">
+                {% for post in posts %} 
+                <div class="col-lg-4">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="{{ post.image.url }}" alt="Image">
+                        </div>
+                        <div class="blog-text">
+                            <h3><a href="{% url 'post_detail' post.id %}">{{ post.title|slice:":30" }}</a></h3>
+                            <p>
+                                {{post.content|slice:":100" }} 
+                            </p>
+                        </div>
+                        <div class="blog-meta">
+                            <p><i class="fa fa-user"></i><a href="{% url 'post_detail' post.id %}">{{ post.author }}</a></p>
+                            <p><i class="fa fa-comments"></i><a href="{% url 'post_detail' post.id %}">5 Comments</a></p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+      </section>
+    <!-- Blog End -->
+
+{% endblock %}

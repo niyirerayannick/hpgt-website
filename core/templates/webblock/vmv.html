@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Vision Mission And Values</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<section id="about">
+    <div class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img" data-parallax="scroll" data-image-src="{% static "img/vmv.jpg"%}"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="section-header">
+                        <p>Learn About Us</p>
+                        <h2>HEALTHCARE PROFFESIONALS IN GLOBAL TRANSFORMATIONS</h2>
+                    </div>
+                    <div class="about-tab">
+                        <ul class="nav nav-pills nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#tab-content-2">Mission</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="tab-content-1" class="container tab-pane active">
+                                Healthcare professionals in global transformation (HPGT) is the International Ministry headquartered in Rwanda which is comprised by all Christians healthcare whomever staff members and students are studying health related domain. It was started by six Christian students’ midwives who were studied and served God in the University of Rwanda, Huye campus in 2018.
+                            </div>
+                            <div id="tab-content-2" class="container tab-pane fade">
+                                The main purpose of the ministry is to teach people to live in purposeful life, empathy and to express God's purpose for human life by doing what He was created to do and having a happy ending. using the word of God Ephesians 2:10
+                            </div>
+                            <div id="tab-content-3" class="container tab-pane fade">
+                                 Promoting, maintaining and improving the quality of life and well-being of all people. Psalm 103: 3-4; 3. he is the one who forgives all that you have received and heals all your diseases.4. he redeems your soul from the pit, and clothe you with mercy and kindness.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
